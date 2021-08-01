@@ -1,0 +1,500 @@
+   51  # Better OS/400 detection: see Bugzilla 31132
+   52  os400=false
+   53  case "`uname`" in OS400*) os400=true;; esac
+   54  # resolve links - $0 may be a softlink
+   55  PRG="$0"
+   56  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+   57  PRGDIR=`dirname "$PRG"`
+   58  EXECUTABLE=catalina.sh
+   59  # Check that target executable exists
+   60  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+   61  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+   62  #!/bin/sh
+   63  # Licensed to the Apache Software Foundation (ASF) under one or more
+   64  # contributor license agreements.  See the NOTICE file distributed with
+   65  # this work for additional information regarding copyright ownership.
+   66  # The ASF licenses this file to You under the Apache License, Version 2.0
+   67  # (the "License"); you may not use this file except in compliance with
+   68  # the License.  You may obtain a copy of the License at
+   69  #
+   70  #     http://www.apache.org/licenses/LICENSE-2.0
+   71  #
+   72  # Unless required by applicable law or agreed to in writing, software
+   73  # distributed under the License is distributed on an "AS IS" BASIS,
+   74  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   75  # See the License for the specific language governing permissions and
+   76  # limitations under the License.
+   77  # -----------------------------------------------------------------------------
+   78  # Start Script for the CATALINA Server
+   79  # -----------------------------------------------------------------------------
+   80  # Better OS/400 detection: see Bugzilla 31132
+   81  os400=false
+   82  case "`uname`" in OS400*) os400=true;; esac
+   83  # resolve links - $0 may be a softlink
+   84  PRG="$0"
+   85  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+   86  PRGDIR=`dirname "$PRG"`
+   87  EXECUTABLE=catalina.sh
+   88  # Check that target executable exists
+   89  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+   90  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+   91  #!/bin/sh
+   92  # Licensed to the Apache Software Foundation (ASF) under one or more
+   93  # contributor license agreements.  See the NOTICE file distributed with
+   94  # this work for additional information regarding copyright ownership.
+   95  # The ASF licenses this file to You under the Apache License, Version 2.0
+   96  # (the "License"); you may not use this file except in compliance with
+   97  # the License.  You may obtain a copy of the License at
+   98  #
+   99  #     http://www.apache.org/licenses/LICENSE-2.0
+  100  #
+  101  # Unless required by applicable law or agreed to in writing, software
+  102  # distributed under the License is distributed on an "AS IS" BASIS,
+  103  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  104  # See the License for the specific language governing permissions and
+  105  # limitations under the License.
+  106  # -----------------------------------------------------------------------------
+  107  # Start Script for the CATALINA Server
+  108  # -----------------------------------------------------------------------------
+  109  # Better OS/400 detection: see Bugzilla 31132
+  110  os400=false
+  111  case "`uname`" in OS400*) os400=true;; esac
+  112  # resolve links - $0 may be a softlink
+  113  PRG="$0"
+  114  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  115  PRGDIR=`dirname "$PRG"`
+  116  EXECUTABLE=catalina.sh
+  117  # Check that target executable exists
+  118  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  119  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  120  #!/bin/sh
+  121  # Licensed to the Apache Software Foundation (ASF) under one or more
+  122  # contributor license agreements.  See the NOTICE file distributed with
+  123  # this work for additional information regarding copyright ownership.
+  124  # The ASF licenses this file to You under the Apache License, Version 2.0
+  125  # (the "License"); you may not use this file except in compliance with
+  126  # the License.  You may obtain a copy of the License at
+  127  #
+  128  #     http://www.apache.org/licenses/LICENSE-2.0
+  129  #
+  130  # Unless required by applicable law or agreed to in writing, software
+  131  # distributed under the License is distributed on an "AS IS" BASIS,
+  132  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  133  # See the License for the specific language governing permissions and
+  134  # limitations under the License.
+  135  # -----------------------------------------------------------------------------
+  136  # Start Script for the CATALINA Server
+  137  # -----------------------------------------------------------------------------
+  138  # Better OS/400 detection: see Bugzilla 31132
+  139  os400=false
+  140  case "`uname`" in OS400*) os400=true;; esac
+  141  # resolve links - $0 may be a softlink
+  142  PRG="$0"
+  143  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  144  PRGDIR=`dirname "$PRG"`
+  145  EXECUTABLE=catalina.sh
+  146  # Check that target executable exists
+  147  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  148  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  149  #!/bin/sh
+  150  # Licensed to the Apache Software Foundation (ASF) under one or more
+  151  # contributor license agreements.  See the NOTICE file distributed with
+  152  # this work for additional information regarding copyright ownership.
+  153  # The ASF licenses this file to You under the Apache License, Version 2.0
+  154  # (the "License"); you may not use this file except in compliance with
+  155  # the License.  You may obtain a copy of the License at
+  156  #
+  157  #     http://www.apache.org/licenses/LICENSE-2.0
+  158  #
+  159  # Unless required by applicable law or agreed to in writing, software
+  160  # distributed under the License is distributed on an "AS IS" BASIS,
+  161  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  162  # See the License for the specific language governing permissions and
+  163  # limitations under the License.
+  164  # -----------------------------------------------------------------------------
+  165  # Stop script for the CATALINA Server
+  166  # -----------------------------------------------------------------------------
+  167  # Better OS/400 detection: see Bugzilla 31132
+  168  os400=false
+  169  case "`uname`" in OS400*) os400=true;; esac
+  170  # resolve links - $0 may be a softlink
+  171  PRG="$0"
+  172  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  173  PRGDIR=`dirname "$PRG"`
+  174  EXECUTABLE=catalina.sh
+  175  # Check that target executable exists
+  176  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  177  exec "$PRGDIR"/"$EXECUTABLE" stop "$@"
+  178  #!/bin/sh
+  179  # Licensed to the Apache Software Foundation (ASF) under one or more
+  180  # contributor license agreements.  See the NOTICE file distributed with
+  181  # this work for additional information regarding copyright ownership.
+  182  # The ASF licenses this file to You under the Apache License, Version 2.0
+  183  # (the "License"); you may not use this file except in compliance with
+  184  # the License.  You may obtain a copy of the License at
+  185  #
+  186  #     http://www.apache.org/licenses/LICENSE-2.0
+  187  #
+  188  # Unless required by applicable law or agreed to in writing, software
+  189  # distributed under the License is distributed on an "AS IS" BASIS,
+  190  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  191  # See the License for the specific language governing permissions and
+  192  # limitations under the License.
+  193  # -----------------------------------------------------------------------------
+  194  # Start Script for the CATALINA Server
+  195  # -----------------------------------------------------------------------------
+  196  # Better OS/400 detection: see Bugzilla 31132
+  197  os400=false
+  198  case "`uname`" in OS400*) os400=true;; esac
+  199  # resolve links - $0 may be a softlink
+  200  PRG="$0"
+  201  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  202  PRGDIR=`dirname "$PRG"`
+  203  EXECUTABLE=catalina.sh
+  204  # Check that target executable exists
+  205  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  206  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  207  #!/bin/sh
+  208  # Licensed to the Apache Software Foundation (ASF) under one or more
+  209  # contributor license agreements.  See the NOTICE file distributed with
+  210  # this work for additional information regarding copyright ownership.
+  211  # The ASF licenses this file to You under the Apache License, Version 2.0
+  212  # (the "License"); you may not use this file except in compliance with
+  213  # the License.  You may obtain a copy of the License at
+  214  #
+  215  #     http://www.apache.org/licenses/LICENSE-2.0
+  216  #
+  217  # Unless required by applicable law or agreed to in writing, software
+  218  # distributed under the License is distributed on an "AS IS" BASIS,
+  219  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  220  # See the License for the specific language governing permissions and
+  221  # limitations under the License.
+  222  # -----------------------------------------------------------------------------
+  223  # Start Script for the CATALINA Server
+  224  # -----------------------------------------------------------------------------
+  225  # Better OS/400 detection: see Bugzilla 31132
+  226  os400=false
+  227  case "`uname`" in OS400*) os400=true;; esac
+  228  # resolve links - $0 may be a softlink
+  229  PRG="$0"
+  230  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  231  PRGDIR=`dirname "$PRG"`
+  232  EXECUTABLE=catalina.sh
+  233  # Check that target executable exists
+  234  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  235  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  236  #!/bin/sh
+  237  # Licensed to the Apache Software Foundation (ASF) under one or more
+  238  # contributor license agreements.  See the NOTICE file distributed with
+  239  # this work for additional information regarding copyright ownership.
+  240  # The ASF licenses this file to You under the Apache License, Version 2.0
+  241  # (the "License"); you may not use this file except in compliance with
+  242  # the License.  You may obtain a copy of the License at
+  243  #
+  244  #     http://www.apache.org/licenses/LICENSE-2.0
+  245  #
+  246  # Unless required by applicable law or agreed to in writing, software
+  247  # distributed under the License is distributed on an "AS IS" BASIS,
+  248  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  249  # See the License for the specific language governing permissions and
+  250  # limitations under the License.
+  251  # -----------------------------------------------------------------------------
+  252  # Start Script for the CATALINA Server
+  253  # -----------------------------------------------------------------------------
+  254  # Better OS/400 detection: see Bugzilla 31132
+  255  os400=false
+  256  case "`uname`" in OS400*) os400=true;; esac
+  257  # resolve links - $0 may be a softlink
+  258  PRG="$0"
+  259  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  260  PRGDIR=`dirname "$PRG"`
+  261  EXECUTABLE=catalina.sh
+  262  # Check that target executable exists
+  263  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  264  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  265  #!/bin/sh
+  266  # Licensed to the Apache Software Foundation (ASF) under one or more
+  267  # contributor license agreements.  See the NOTICE file distributed with
+  268  # this work for additional information regarding copyright ownership.
+  269  # The ASF licenses this file to You under the Apache License, Version 2.0
+  270  # (the "License"); you may not use this file except in compliance with
+  271  # the License.  You may obtain a copy of the License at
+  272  #
+  273  #     http://www.apache.org/licenses/LICENSE-2.0
+  274  #
+  275  # Unless required by applicable law or agreed to in writing, software
+  276  # distributed under the License is distributed on an "AS IS" BASIS,
+  277  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  278  # See the License for the specific language governing permissions and
+  279  # limitations under the License.
+  280  # -----------------------------------------------------------------------------
+  281  # Start Script for the CATALINA Server
+  282  # -----------------------------------------------------------------------------
+  283  # Better OS/400 detection: see Bugzilla 31132
+  284  os400=false
+  285  case "`uname`" in OS400*) os400=true;; esac
+  286  # resolve links - $0 may be a softlink
+  287  PRG="$0"
+  288  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  289  PRGDIR=`dirname "$PRG"`
+  290  EXECUTABLE=catalina.sh
+  291  # Check that target executable exists
+  292  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  293  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  294  #!/bin/sh
+  295  # Licensed to the Apache Software Foundation (ASF) under one or more
+  296  # contributor license agreements.  See the NOTICE file distributed with
+  297  # this work for additional information regarding copyright ownership.
+  298  # The ASF licenses this file to You under the Apache License, Version 2.0
+  299  # (the "License"); you may not use this file except in compliance with
+  300  # the License.  You may obtain a copy of the License at
+  301  #
+  302  #     http://www.apache.org/licenses/LICENSE-2.0
+  303  #
+  304  # Unless required by applicable law or agreed to in writing, software
+  305  # distributed under the License is distributed on an "AS IS" BASIS,
+  306  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  307  # See the License for the specific language governing permissions and
+  308  # limitations under the License.
+  309  # -----------------------------------------------------------------------------
+  310  # Start Script for the CATALINA Server
+  311  # -----------------------------------------------------------------------------
+  312  # Better OS/400 detection: see Bugzilla 31132
+  313  os400=false
+  314  case "`uname`" in OS400*) os400=true;; esac
+  315  # resolve links - $0 may be a softlink
+  316  PRG="$0"
+  317  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  318  PRGDIR=`dirname "$PRG"`
+  319  EXECUTABLE=catalina.sh
+  320  # Check that target executable exists
+  321  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  322  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  323  #!/bin/sh
+  324  # Licensed to the Apache Software Foundation (ASF) under one or more
+  325  # contributor license agreements.  See the NOTICE file distributed with
+  326  # this work for additional information regarding copyright ownership.
+  327  # The ASF licenses this file to You under the Apache License, Version 2.0
+  328  # (the "License"); you may not use this file except in compliance with
+  329  # the License.  You may obtain a copy of the License at
+  330  #
+  331  #     http://www.apache.org/licenses/LICENSE-2.0
+  332  #
+  333  # Unless required by applicable law or agreed to in writing, software
+  334  # distributed under the License is distributed on an "AS IS" BASIS,
+  335  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  336  # See the License for the specific language governing permissions and
+  337  # limitations under the License.
+  338  # -----------------------------------------------------------------------------
+  339  # Start Script for the CATALINA Server
+  340  # -----------------------------------------------------------------------------
+  341  # Better OS/400 detection: see Bugzilla 31132
+  342  os400=false
+  343  case "`uname`" in OS400*) os400=true;; esac
+  344  # resolve links - $0 may be a softlink
+  345  PRG="$0"
+  346  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+  347  PRGDIR=`dirname "$PRG"`
+  348  EXECUTABLE=catalina.sh
+  349  # Check that target executable exists
+  350  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+  351  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+  352  #!/bin/bash
+  353  if [ "x$1" = "x-d" ] ; then 	set -x; 	shift; 	resolve_debug='-d'; fi
+  354  export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
+  355  export ANDROID_HOME=/home/build/android-sdk-linux
+  356  #REQ_HEAD_REV=HEAD #For latest revisions uncomment this
+  357  #REQ_HEAD_REV=56995 #For specifi revisions uncomment this
+  358  REQ_HEAD_REV=$1
+  359  echo "REQ_HEAD_REV= $REQ_HEAD_REV"
+  360  cd /root/apps/DashO7.5/
+  361  ./antinstall /usr/share/ant
+  362  if [ $? -ne 0 ]; then echo  "failed to switch to DashO7.5 version"; exit 1; fi
+  363  #!/bin/bash
+  364  if [ "x$1" = "x-d" ] ; then 	set -x; 	shift; 	resolve_debug='-d'; fi
+  365  export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
+  366  export ANDROID_HOME=/home/build/android-sdk-linux
+  367  #REQ_HEAD_REV=HEAD #For latest revisions uncomment this
+  368  #REQ_HEAD_REV=56995 #For specifi revisions uncomment this
+  369  REQ_HEAD_REV=$1
+  370  echo "REQ_HEAD_REV= $REQ_HEAD_REV"
+  371  cd /root/apps/DashO7.5/
+  372  ./antinstall /usr/share/ant
+  373  if [ $? -ne 0 ]; then echo  "failed to switch to DashO7.5 version"; exit 1; fi
+  374  #!/bin/bash
+  375  if [ "x$1" = "x-d" ] ; then 	set -x; 	shift; 	resolve_debug='-d'; fi
+  376  export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
+  377  export ANDROID_HOME=/home/build/android-sdk-linux
+  378  #REQ_HEAD_REV=HEAD #For latest revisions uncomment this
+  379  #REQ_HEAD_REV=56995 #For specifi revisions uncomment this
+  380  REQ_HEAD_REV=$1
+  381  echo "REQ_HEAD_REV= $REQ_HEAD_REV"
+  382  cd /root/apps/DashO7.5/
+  383  ./antinstall /usr/share/ant
+  384  if [ $? -ne 0 ]; then echo  "failed to switch to DashO7.5 version"; exit 1; fi
+  385  git clone https://github.com/7411649182/uday.git
+  386  git status
+  387  ls -a
+  388  git status
+  389  git status
+  390  git add testcase.txt
+  391  git status
+  392  git commit -m "adding new file"
+  393  git push
+  394  git push
+  395  cd~/desktop/
+  396  cd ~/desktop/
+  397  git clone https://github.com/harithareddyn/test_repo.git
+  398  cd test repo
+  399  cd test_repo
+  400  ls
+  401  cd ~/desktop/
+  402  git clone git@github.com:harithareddyn/test_repo.git
+  403  cd ~/desktop/
+  404  git clone git@github.com:harithareddyn/test_repo.git
+  405  s rights
+  406  and the repository exists.
+  407  cd ~/desktop/
+  408  git clone
+  409  git clone https://github.com/harithareddyn/test_repo.git
+  410  ls
+  411  ls
+  412  cd test_repo
+  413  ls
+  414  ls _a
+  415  ls -a
+  416  clear
+  417  ls -a
+  418  clone
+  419  clear
+  420  git clone
+  421  git clone https://github.com/harithareddyn/test_repo.git
+  422  git clone https://github.com/harithareddyn/test_repo.git
+  423  git status
+  424  add testcase.txt
+  425  git add testcase.txt
+  426  git status
+  427  git commit -m "adding new file"
+  428  git push
+  429  git status
+  430  git status
+  431  git add testcase1.txt
+  432  git status
+  433  git commit -m "adding another file"
+  434  git push
+  435  git status
+  436  git add testcase2.txt
+  437  git status
+  438  git commit -m "adding 3rd file"
+  439  git push
+  440  git status
+  441  git add testcase3.txt
+  442  git status
+  443  git commit -m "adding 4th file"
+  444  git push
+  445  git stuts
+  446  git status
+  447  git add testcase4.txt
+  448  git status
+  449  git commit -m "adding 5th file"
+  450  git push
+  451  git status
+  452  git add testcase5.txt
+  453  git status
+  454  git commit -m "adding 5th file"
+  455  git status
+  456  git push
+  457  git clone https://github.com/udaybandr/devops.git
+  458  git log
+  459  ls -a
+  460  git clone bandr/devops.git
+  461  git clone https://github.com/udaybandr/devops.git
+  462  ls -a
+  463  ls
+  464  ls -a
+  465  git status
+  466  git log
+  467  git log --oneline
+  468  git pull
+  469  git log
+  470  git log --oneline
+  471  ls
+  472  git status
+  473  git rm testcase5.txt
+  474  git status
+  475  ls
+  476  git status
+  477  git commit -m "removing testcase5.txt"
+  478  status
+  479  git status
+  480  git push
+  481  git push
+  482  git add testcaseby hari.txt
+  483  git add testcasebyhari.txt
+  484  git status
+  485  git commit -m "adding testcase in uday repository"
+  486  git push
+  487  git push
+  488  git push
+  489  git log
+  490  git log--oneline
+  491  git log --oneline
+  492  ls
+  493  git rm testcasebyhari.txt
+  494  ls
+  495  git commit -m "removing testcasebyhari.txt from uday repository"
+  496  git status
+  497  git pus
+  498  git push
+  499  git pull
+  500  git log
+  501  git remote -
+  502  git remote -
+  503  git remote -v
+  504  clear
+  505  git log --oneline
+  506  git show f8786a7
+  507  git revert f8786a7
+  508  git status
+  509  git push
+  510  ls
+  511  git log
+  512  clear
+  513  ls
+  514  touch testfile
+  515  git status
+  516  git add testfile file
+  517  git add testfile 
+  518  git status
+  519  git commit -m "adding testfile"
+  520  git status
+  521  git push
+  522  git status
+  523  clear
+  524  git log --oneline
+  525  git status
+  526  git checkout -- testfile
+  527  git status
+  528  git add testfile 
+  529  git status
+  530  git commit -m "adding firstline to the file"
+  531  git status
+  532  git push
+  533  git log --oneline
+  534  clear
+  535  git log --oneline
+  536  git status
+  537  git add testfile 
+  538  git commit -m "adding secondline"
+  539  git push
+  540  clear
+  541  git log --oneline
+  542  git revert faf2602
+  543  git status
+  544  git push
+  545  git log --oneline
+  546  clear
+  547  git log
+  548  clear
+  549  history
+  550  history > history_command.txt
